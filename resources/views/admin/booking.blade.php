@@ -71,7 +71,7 @@ $formName="Completed";
                         <td>{{$booking->bookedcountry}}</td>
                         <td>{{$booking->bookedphone}}</td>
                         <td>{{$booking->bookedemail}}</td>
-                      <td>{{$destination->title}}</td>
+                      <td><a target="_blank" href="{{route('destination.infoDestination',$destination->id)}}">{{$destination->title}}</a></td>
                         <td>{{$booking->bookeddate}}</td>
                         <td>
                           <button
